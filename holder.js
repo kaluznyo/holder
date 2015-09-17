@@ -220,8 +220,7 @@ License:  MIT
         });
       };
 
-      // window.cancelAnimationFrame
-      global.cancelAnimationFrame = webkitCancelAnimationFrame;
+      global.cancelAnimationFrame = window.cancelAnimationFrame;
     }(window));
     } else if (window.mozRequestAnimationFrame) {
       //https://github.com/Financial-Times/polyfill-service/blob/master/polyfills/requestAnimationFrame/polyfill-moz.js
